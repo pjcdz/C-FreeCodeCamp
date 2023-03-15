@@ -35,6 +35,8 @@
 //     return 0;
 // }
 
+// ############################# <MATH.H> #######################################################################################
+
 // #include <math.h>
 
 // int main() {
@@ -55,6 +57,8 @@
 //     return 0;
 // }
 
+// ############################# CONST // DEFINE #######################################################################################
+
 // int main() {
 //     const int FAV_NUM = 7;
 //     printf("%d", FAV_NUM);
@@ -66,6 +70,8 @@
 
 //     return 0;
 // }
+
+// ############################# INPUT (SCANF // FGETS) #######################################################################################
 
 // int main() {
 //     int age;
@@ -91,22 +97,88 @@
 //     return 0;
 // }
 
+// ############################# SIMPLE SUM #######################################################################################
+
+// int main() {
+//     int num1;
+//     int num2;
+//     printf("Enter first number:");
+//     scanf("%d", &num1);
+//     printf("Enter second number:");
+//     scanf("%d", &num2);
+
+//     printf("Answer: %d", num1 + num2);
+
+//     double num1;
+//     double num2;
+//     printf("Enter first number: ");
+//     scanf("%lf", &num1);
+//     printf("Enter second number: ");
+//     scanf("%lf", &num2);
+
+//     printf("Answer: %f", num1 + num2);
+// }
+
+// ############################# MADLIBS GAME #######################################################################################
+
+// int main() {
+//     char color[20];
+//     char pluralNoun[20];
+//     char celebrityF[20];
+//     char celebrityL[20];
+
+//     printf("Enter a color: ");
+//     scanf("%s", color);
+//     printf("Enter a plural noun: ");
+//     scanf("%s", pluralNoun);
+//     printf("Enter a celebrity: ");
+//     scanf("%s %s", celebrityF, celebrityL);
+
+//     printf("Roses are %s\n", color);
+//     printf("%s are blue \n", pluralNoun);
+//     printf("I love %s %s\n", celebrityF, celebrityL);
+
+//     return 0;
+// }
+
+// ############################# ARRAYS #######################################################################################
+
+// int main() {
+//     int luckyNumbers[] = {4, 8, 15, 16, 23, 42};
+//     luckyNumbers[1] = 200;
+//     printf("%d", luckyNumbers[1]);
+
+//     return 0;
+// }
+
+// ############################# FUNTIONS #######################################################################################
+
+// void sayHi(char name[], int age) {
+// 	printf("Hello %s, you are %d\n", name, age);
+// }
+
+
+// int main() {
+// 	printf("TOP\n");
+
+// 	sayHi("Mike", 35);
+// 	sayHi("Tom", 35);
+// 	sayHi("Oscar", 35);
+
+// 	printf("BOTTOM\n");
+// 	return 0;
+// }
+
+// ############################# RETURN STATEMENT // PROPOTYPE #######################################################################################
+
+double cube(double num); // PROTOTYPE   
+
 int main() {
-    int num1;
-    int num2;
-    printf("Enter first number:");
-    scanf("%d", &num1);
-    printf("Enter second number:");
-    scanf("%d", &num2);
-
-    printf("Answer: %d", num1 + num2);
-
-    double num1;
-    double num2;
-    printf("Enter first number: ");
-    scanf("%lf", &num1);
-    printf("Enter second number: ");
-    scanf("%lf", &num2);
-
-    printf("Anser: %f", num1 + num2);
+    printf("%f", cube(3.0));
+    return 0;
 }
+
+double cube(double num) {
+    return num * num * num;
+}
+
